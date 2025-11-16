@@ -102,7 +102,7 @@ Este proyecto demuestra:
 
 ## 👤 Autor/a
 
-**Tu Nombre Completo**
+**Milton Villacis**
 - Estudiante de programación
 - Apasionado por el desarrollo web frontend
 

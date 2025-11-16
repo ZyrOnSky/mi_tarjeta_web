@@ -11,19 +11,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Canvas para efectos de partículas -->
+    <canvas id="canvas-particulas"></canvas>
+    
     <!-- Contenedor principal de la tarjeta -->
     <div class="container">
         <!-- Tarjeta de presentación -->
         <div class="card" id="tarjeta">
             <!-- Sección del avatar/imagen -->
             <div class="avatar-container">
-                <img src="https://via.placeholder.com/150/4A90E2/FFFFFF?text=YO" alt="Avatar" class="avatar" id="avatar">
+                <img src="images/avatar-ghibli.png" alt="Avatar de Milton Villacis" class="avatar" id="avatar" onerror="this.src='https://via.placeholder.com/150/4A90E2/FFFFFF?text=MV'">
             </div>
             
             <!-- Sección de información personal -->
             <div class="info">
-                <h1 class="nombre" id="nombre">Tu Nombre Completo</h1>
-                <p class="descripcion" id="descripcion">Soy estudiante de programación apasionado por el desarrollo web y las tecnologías frontend.</p>
+                <h1 class="nombre" id="nombre">Milton Villacis</h1>
+                <p class="descripcion" id="descripcion">Es hora de descubrir todo un mundo de posibilidades en el desarrollo web!</p>
             </div>
             
             <!-- Botón interactivo -->
