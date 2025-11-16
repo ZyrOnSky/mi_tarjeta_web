@@ -1,0 +1,187 @@
+/* ============================================
+   ESTILOS GENERALES Y RESET
+   ============================================ */
+
+/* Reset básico para eliminar márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del cuerpo de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ============================================
+   CONTENEDOR PRINCIPAL
+   ============================================ */
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ============================================
+   TARJETA DE PRESENTACIÓN
+   ============================================ */
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    /* Transición suave para cambios de color de fondo, transform y sombra */
+    transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover en la tarjeta */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================
+   AVATAR/IMAGEN
+   ============================================ */
+
+.avatar-container {
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #667eea;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover en el avatar */
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+/* ============================================
+   INFORMACIÓN PERSONAL
+   ============================================ */
+
+.info {
+    margin-bottom: 30px;
+}
+
+.nombre {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.descripcion {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   BOTÓN INTERACTIVO
+   ============================================ */
+
+.btn-interactivo {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Efecto hover en el botón */
+.btn-interactivo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* Efecto active (cuando se hace clic) */
+.btn-interactivo:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.4);
+}
+
+/* ============================================
+   DISEÑO RESPONSIVE
+   ============================================ */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+    .card {
+        padding: 30px 20px;
+    }
+    
+    .nombre {
+        font-size: 24px;
+    }
+    
+    .descripcion {
+        font-size: 15px;
+    }
+    
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .card {
+        padding: 25px 15px;
+        border-radius: 15px;
+    }
+    
+    .nombre {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .descripcion {
+        font-size: 14px;
+    }
+    
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-width: 3px;
+    }
+    
+    .btn-interactivo {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
